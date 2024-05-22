@@ -1,0 +1,8 @@
+services:
+  jboss:
+    image: daggerok/jboss-eap-6.3:latest
+    container_name: jboss_container
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./build/libs/service.war:/opt/wildfly/standalone/deployments/my-service.war

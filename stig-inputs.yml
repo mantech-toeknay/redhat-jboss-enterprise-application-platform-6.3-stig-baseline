@@ -1,0 +1,18 @@
+disable_slow_controls: false
+jboss_process_name: 'wildfly'
+connection: '--connect'
+jboss_home: '/opt/wildfly'
+auditor_role_users: ['user-auditor']
+administrator_role_users: ['user-admin']
+superuser_role_users: ['user-superuser', 'user-$local']
+wildfly_group: 'wildfly'
+wildly_owner: 'wildfly'
+approved_applications: []
+wildfly_ports: ['jboss.management.http.port=9990', 'jboss.management.https.port=9993', 'jboss.http.port=8080', 'jboss.https.port=8443', 'jboss.ajp.port=8009']
+deployer_role_users: ['user-deployer']
+maintainer_role_users: ['user-maintainer']
+monitor_role_users: ['user-monitor']
+operator_role_users: ['user-operator']
+ldap: false
+high_availability: false
+java_cert: '/usr/lib/jvm/java-1.8.0/jre/lib/security/cacerts'

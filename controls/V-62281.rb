@@ -138,7 +138,7 @@ control 'V-62281' do
       end
     end
   end
-  if auditor_role.empty? && administrator_role.empty? && superuser_role.empty? && deployer_role.empty? && maintainer_role.empty && monitor_role.empty && operator_role.empty?
+  if auditor_role.empty? && administrator_role.empty? && superuser_role.empty? && deployer_role.empty? && maintainer_role.empty? && monitor_role.empty? && operator_role.empty?
     impact 0.0
     desc 'The are no Wildfly accounts with the following roles: auditor, administrator, superuser, deployer, maintainer, monitor, or operator, therefore this control is not applicable'
     describe 'The are no Wildfly accounts with the following roles: auditor, administrator, superuser, deployer, maintainer, monitor, or operator, therefore this control is not applicable' do
