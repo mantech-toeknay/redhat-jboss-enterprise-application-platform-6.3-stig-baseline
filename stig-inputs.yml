@@ -1,7 +1,7 @@
 disable_slow_controls: false
 jboss_process_name: 'wildfly'
 connection: '--connect'
-jboss_home: '/opt/wildfly'
+jboss_home: '/opt/jboss/wildfly'
 auditor_role_users: ['user-auditor']
 administrator_role_users: ['user-admin']
 superuser_role_users: ['user-superuser', 'user-$local']
